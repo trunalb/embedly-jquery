@@ -2,7 +2,7 @@
  * https://github.com/embedly/embedly-jquery
  * Copyright (c) 2013 Sean Creeley
  * Licensed BSD
- */ 
+ */
 (function($) {
 
   /*
@@ -199,7 +199,7 @@
       $.each(batches, function(i, batch){
         $.ajax({
           url: self.build(method, batch, options),
-          dataType: 'jsonp',
+          dataType: 'json',
           success: function(data){
             // We zip together the urls and the data so we have the original_url
             $.each(zip([batch, data]), function(i, obj){
